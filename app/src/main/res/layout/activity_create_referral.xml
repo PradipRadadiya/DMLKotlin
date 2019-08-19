@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".referral.activity.CreateReferralAct">
+
+    <include android:layout_width="0dp" android:layout_height="wrap_content" layout="@layout/toolbar"
+             app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             android:id="@+id/include"/>
+
+    <com.google.android.material.button.MaterialButton
+            android:text="@string/manage_referral"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnManageReferral"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"/>
+    <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/include"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/btnManageReferral">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/sixteen_dp"
+                android:layout_marginEnd="@dimen/sixteen_dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/MyTextInputLayout"
+                    app:hintEnabled="true"
+                    app:hintAnimationEnabled="true"
+                    app:helperTextEnabled="true"
+                    app:errorEnabled="true"
+                    android:id="@+id/tilFnm">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="First Name"
+                        style="@style/MyTextInputEditText"
+                        android:inputType="textPersonName"
+                        android:id="@+id/edFnm"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/MyTextInputLayout"
+                    app:hintEnabled="true"
+                    app:hintAnimationEnabled="true"
+                    app:helperTextEnabled="true"
+                    app:errorEnabled="true"
+                    android:id="@+id/tilLnm">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Last Name"
+                        style="@style/MyTextInputEditText"
+                        android:inputType="textPersonName"
+                        android:id="@+id/edLnm"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/MyTextInputLayout"
+                    app:hintEnabled="true"
+                    app:hintAnimationEnabled="true"
+                    app:helperTextEnabled="true"
+                    app:errorEnabled="true"
+                    android:id="@+id/tilEmail">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email"
+                        style="@style/MyTextInputEditText"
+                        android:inputType="textPersonName"
+                        android:id="@+id/email"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/MyTextInputLayout"
+                    app:hintEnabled="true"
+                    app:hintAnimationEnabled="true"
+                    app:helperTextEnabled="true"
+                    app:errorEnabled="true"
+                    android:id="@+id/tilTelephone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Telephone Name"
+                        style="@style/MyTextInputEditText"
+                        android:inputType="textPersonName"
+                        android:id="@+id/edTelephone"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner android:layout_width="match_parent"
+                     android:layout_height="45dp"
+                     android:id="@+id/spinnerDiscount"
+                     android:entries="@array/discount"
+                     android:background="@drawable/spinner_border"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

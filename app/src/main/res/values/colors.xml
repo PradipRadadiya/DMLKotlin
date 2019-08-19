@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#546e7a</color>
+    <color name="colorPrimaryDark">#29434e</color>
+    <color name="colorLight">#29434e</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="line_color">#90A4AE</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="green">#43A047</color>
+    <color name="red">#aa0000</color>
+    <color name="ripple_color">#2f424242</color>
+    <color name="selected_icon_colot">#3c415e</color>
+    <color name="default_icon_color">#90A4AE</color>
+    <color name="shadow_color">#1f212121</color>
+
+</resources>

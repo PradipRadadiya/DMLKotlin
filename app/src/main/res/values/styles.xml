@@ -1,0 +1,94 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorLight</item>
+        <!-- specify enter and exit transitions -->
+        <item name="android:windowEnterTransition">@android:transition/explode</item>
+        <item name="android:windowExitTransition">@android:transition/explode</item>
+
+    </style>
+
+
+    <style name="MyTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <!--<item name="android:textColorHint">@color/colorLight</item>-->
+        <!--<item name="android:paddingStart">16dp</item>-->
+        <!--<item name="android:paddingEnd">16dp</item>-->
+        <!--<item name="boxStrokeColor">@color/edit_text_box_border</item>-->
+        <item name="android:layout_marginTop">@dimen/eight_dp</item>
+    </style>
+
+    <style name="MyTextInputEditText" parent="ThemeOverlay.MaterialComponents.TextInputEditText">
+        <item name="android:textColor">@color/colorLight</item>
+        <item name="android:lines">1</item>
+
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="MyTextView">
+        <item name="android:textSize">@dimen/sixteen_dp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="MyView">
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="transaction_text">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="transaction_image">
+        <item name="android:tint">@color/white</item>
+        <item name="android:padding">@dimen/eight_dp</item>
+    </style>
+
+    <style name="transaction_text_bold">
+        <item name="android:textSize">12dp</item>
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="header_text">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">8dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="header_image">
+        <item name="android:layout_marginTop">@dimen/eight_dp</item>
+        <item name="android:padding">@dimen/eight_dp</item>
+    </style>
+
+    <style name="one_dp_view">
+        <item name="android:background">@color/line_color</item>
+    </style>
+
+    <style name="img_home_header_white">
+        <item name="android:tint">@color/white</item>
+    </style>
+
+    <style name="img_home_header_black">
+        <item name="android:tint">@color/colorPrimaryDark</item>
+    </style>
+
+</resources>

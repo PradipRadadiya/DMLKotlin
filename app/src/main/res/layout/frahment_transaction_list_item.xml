@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView android:layout_width="match_parent"
+                                                       android:layout_height="wrap_content"
+                                                       app:layout_constraintTop_toTopOf="parent"
+                                                       app:layout_constraintStart_toStartOf="parent"
+                                                       app:layout_constraintEnd_toEndOf="parent"
+                                                       app:layout_constraintBottom_toBottomOf="parent"
+                                                       android:layout_marginStart="16dp" android:layout_marginTop="8dp"
+                                                       android:layout_marginEnd="16dp"
+                                                       android:layout_marginBottom="8dp"
+                                                       app:cardElevation="@dimen/eight_dp"
+                                                       android:padding="@dimen/sixteen_dp">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/eight_dp">
+
+                <com.diamondmela.utility.MyTextView
+                        android:layout_width="@dimen/zero_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Order Id"
+                        style="@style/transaction_text_bold"/>
+
+                <com.diamondmela.utility.MyTextView
+                        android:layout_width="@dimen/zero_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/tvOrderId"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/eight_dp">
+
+                <com.diamondmela.utility.MyTextView
+                        android:layout_width="@dimen/zero_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/transaction_text_bold"
+                        android:text="Transaction Amount"/>
+
+                <com.diamondmela.utility.MyTextView
+                        android:layout_width="@dimen/zero_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/tvTransactionAmt"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/eight_dp">
+
+                <com.diamondmela.utility.MyTextView
+                        android:layout_width="@dimen/zero_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/transaction_text_bold"
+                        android:text="CR/DR"/>
+
+                <com.diamondmela.utility.MyTextView
+                        android:layout_width="@dimen/zero_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/tvCrDr"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
